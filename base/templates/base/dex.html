@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list-page</title>
+</head>
+<body>
+  <div class="conta" >
+    <div class="row"style="display: flex;">
+    {% for x in obj %}
+    <div class="col-4">      
+    <a href="{% url 'detail' x.id %}">{{x.name}}</a>
+    <img src="{{x.img1}}" alt="" style="width: 300px; height: 190px;">
+    </div>
+
+    {% endfor %}
+
+    
+  </div>
+</div>
+
+
+<style>
+  .col-4{
+  background-color: rgb(131, 127, 127);
+  width: 300px;
+  height: 200px;
+  margin-left: 10px;
+  }
+</style>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
